@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="CSS/style-index.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindo</h1>
+        <div class="button-container">
+            <button onclick="showLogin('gestor')">GESTOR</button>
+            <button onclick="showLogin('fiscal')">FISCAL</button>
+            <button onclick="showLogin('cliente')">CLIENTE</button>
+        </div>
+        <div id="login-form" class="login-form hidden">
+            <h2>Login</h2>
+            <form id="form">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+                <p id="message" class="message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/script-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Obra</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- Adicionando jsPDF -->
+    <script src="JS/gestor.js" defer></script>
+</head>
+<body>
+    <h1>Relatório de Obra</h1>
+    <form id="relatorioForm" enctype="multipart/form-data">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="local">Local:</label><br>
+        <input type="text" id="local" name="local" required><br><br>
+        
+        <label for="orcamento">Orçamento:</label><br>
+        <input type="number" id="orcamento" name="orcamento" required><br><br>
+        
+        <label for="progresso">Progresso (%):</label><br>
+        <input type="number" id="progresso" name="progresso" min="0" max="100" required><br><br>
+        
+        <label for="cliente">Cliente:</label><br>
+        <input type="text" id="cliente" name="cliente" required><br><br>
+        
+        <label for="imagem">Imagem:</label><br>
+        <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
+        
+        <button type="submit">Registrar Obra</button>
+    </form>
+    
+    <div id="obrasContainer"></div> <!-- Adicionando o container para renderizar as obras -->
+</body>
+</html>

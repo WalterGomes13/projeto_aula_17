@@ -1,0 +1,5 @@
+{
+    "gestor": { "login": "marcos", "senha": "1234" },
+    "fiscal": { "login": "pedro", "senha": "456" },
+    "cliente": { "login": "mateus", "senha": "789" }
+}
